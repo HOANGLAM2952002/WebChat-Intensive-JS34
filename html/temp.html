@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MindX Chat</title>  
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="../js/learning.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="user-profile">
+            <div id="user-email" class="user-email"></div>
+            <button class="btn-icon" id="sign-out-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </div>
+    </nav>
+    <section class="chat-container">
+        <div class="aside-left">
+            <div class="list-conversations">
+                <div class="conversation">
+                    <div class="conversation-title">First Conversation</div>
+                    <div class="conversation-members">2 Members</div>
+                </div>
+                <div class="conversation">
+                    <div class="conversation-title">Second Conversation</div>
+                    <div class="conversation-members">2 Members</div>
+                </div>
+                <div class="conversation">
+                    <div class="conversation-title">Third Conversation</div>
+                    <div class="conversation-members">2 Members</div>
+                </div>
+            </div>
+            <form class="form-add-conversation">
+                <div class="input-wrapper">
+                    <input type="text" name="title" placeholder="Conversation title">
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" name="friendEmail" placeholder="Your friend email">
+                </div>
+                <button class="btn-icon" type="submit">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+        </div>
+        
+        <div class="current-conversation">
+            <div id="list-messages" class="list-messages">
+            </div>
+            <form id="form-chat" class="form-chat">
+                <div class="input-wrapper">
+                    <input id="form-chat-input" type="text" name="message" placeholder="Enter your message">
+                </div>
+                <button id="form-chat-submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+        <!-- right -->
+    </section>
+</body>
+</html>
